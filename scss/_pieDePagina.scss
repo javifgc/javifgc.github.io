@@ -1,0 +1,22 @@
+/*Pie de pagina*/
+footer{
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+        img{
+            height: 15px;
+            }
+        ul{
+            list-style: none;
+            font-family: 'Poppins', sans-serif;
+            color: #561D72;
+            li{
+                float: left;
+                margin: 10px 20px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    
+}
