@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+h1{
+    color: #F26052;
+    margin: 10px;
+    text-align: center;
+}
+
+h2{
+    color: #561D72;
+}
+
+p{
+    color: #3D1452;
+    text-align: center;
+    font-size: 16px;
+}
+
+a{
+    color: #561D72;
+    padding: 5px;
+}
+
+#colorTabla{
+    color: #3D1452;
+}
+
+.stylogo{
+    height: 3rem;
+}
+
+/*Tipografias*/
+
+.headType{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #F26052;
+    text-align: left;
+    padding: 20px 50px;
+}
+
+.subType{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #F26052;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bodyType{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #561D72;
+    text-align: justify;
+}
+
+.buttonType{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #F26052;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Animaciones*/
+
+a:hover{
+    background-color: #d5adc8;
+    background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+    border-radius: 8px;
+    transition:linear 500ms;
+}
+
+article:hover{
+    transform: scale(1.1,1.1);
+}
+
+/*Barra de navegacion*/
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.focus{
+    background-color: #ffcdc8;
+    border-radius: 8px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 10px;
+    float: left;
+    padding: 0px 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #F26052;
+    text-align: center;
+}
+
+/*Home*/
+#content{
+    background-color: #fdfdfd;
+    height: 400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.landimage{
+    height: 400px;
+}
+
+.landtext{
+    text-align: center;
+    width: 500px;
+    align-self: center;
+}
+
+/*Pie de pagina*/
+footer{
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+footer img{
+    height: 15px;
+}
+
+footer ul li{
+    float: left;
+    list-style: none;
+    margin: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #561D72;
+}
+
+/*Blog*/
+article{
+    background-color: #fafafa;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+}
+
+.articleflex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/*Educacion*/
+#eduGrid{
+    height: 800px;
+    display: grid;
+    grid-template-areas: "head nav" "main main" "foot foot";
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 350px 350px 350px;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+.a{ grid-area: head; }
+.b{ grid-area: nav; }
+.c{ grid-area: main; }
+.d{ grid-area: foot; }
+
+#eduGrid div{
+    margin-top: 20px;
+}
+
+#eduGrid img{
+    height: 300px;
+}
+/*Eventos*/
+.liveFlex{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*Suscripcion*/
+.form{
+    width: 400px;
+}
+
+
+

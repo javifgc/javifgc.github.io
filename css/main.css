@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none; }
+
+.stylogo {
+  height: 3rem; }
+
+/*Colores*/
+h1 {
+  color: #F26052;
+  margin: 10px;
+  text-align: center; }
+
+h2 {
+  color: #561D72; }
+
+p {
+  color: #3D1452;
+  text-align: center;
+  font-size: 16px; }
+
+a {
+  color: #561D72;
+  padding: 5px; }
+
+/*Tipografias*/
+* {
+  font-family: 'Poppins', sans-serif; }
+
+.headType {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #F26052;
+  text-align: left;
+  padding: 20px 50px; }
+
+.subType {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #F26052;
+  text-align: center;
+  text-transform: uppercase; }
+
+.bodyType {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #561D72;
+  text-align: justify; }
+
+.buttonType {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #F26052;
+  text-align: center;
+  text-transform: uppercase; }
+
+/*Animaciones*/
+a:hover {
+  background-color: #d5adc8;
+  background-image: linear-gradient(315deg, #d5adc8 0%, #ff8489 74%);
+  border-radius: 8px;
+  transition: linear 500ms; }
+
+article:hover {
+  transform: scale(1.1, 1.1); }
+
+/*Barra de navegacion*/
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-around; }
+
+.focus {
+  background-color: #ffcdc8;
+  border-radius: 8px; }
+
+nav {
+  font-family: 'Poppins', sans-serif; }
+  nav ul {
+    list-style: none;
+    color: #F26052; }
+    nav ul li {
+      margin: 10px;
+      padding: 0px 50px;
+      float: left;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center; }
+
+/*Pie de pagina*/
+footer {
+  height: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end; }
+  footer img {
+    height: 15px; }
+  footer ul {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: #561D72; }
+    footer ul li {
+      float: left;
+      margin: 10px 20px;
+      font-size: 14px;
+      font-weight: 400; }
+
+/*Home*/
+#content {
+  background-color: #fdfdfd;
+  height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+.landtext {
+  text-align: center;
+  width: 500px;
+  align-self: center; }
+
+/*Blog*/
+article {
+  background-color: #fafafa;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 500px; }
+
+.articleflex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+
+/*Educacion*/
+#eduGrid {
+  height: 800px;
+  display: grid;
+  grid-template-areas: "head nav" "main main" "foot foot";
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 350px 350px 350px;
+  grid-column-gap: 20px;
+  justify-content: center; }
+  #eduGrid div {
+    margin-top: 20px; }
+  #eduGrid img {
+    height: 300px; }
+
+.a {
+  grid-area: head; }
+
+.b {
+  grid-area: nav; }
+
+.c {
+  grid-area: main; }
+
+.d {
+  grid-area: foot; }
+
+/*Eventos*/
+/*Small*/
+.livegrid {
+  height: 1800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .livegrid img {
+    height: 250px;
+    border: solid 1px black;
+    border-radius: 10px; }
+  .livegrid div {
+    text-align: center; }
+
+/*Medium*/
+@media screen and (min-width: 768px) {
+  .livegrid {
+    height: 1000px;
+    display: grid;
+    grid-template-areas: "proxEvento proxEvento" "evento1 evento2" "evento3 evento4";
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: auto 350px 350px;
+    grid-row-gap: 20px; }
+  .proxEvento {
+    grid-area: proxEvento; }
+    .proxEvento img {
+      height: 660px; }
+  .e1 {
+    grid-area: evento1; }
+  .e2 {
+    grid-area: evento2; }
+  .e3 {
+    grid-area: evento3; }
+  .e4 {
+    grid-area: evento4; } }
+
+/*Large*/
+@media screen and (min-width: 1024px) {
+  .livegrid {
+    height: 800px;
+    margin: 20px 0px;
+    display: grid;
+    grid-template-areas: "proxEvento evento1 evento2"  "proxEvento evento3 evento4";
+    grid-template-columns: 50vw 25vw 25vw;
+    grid-template-rows: 350px 350px;
+    grid-row-gap: 60px;
+    justify-content: space-evenly; }
+    .livegrid img {
+      border: solid 1px black; }
+    .livegrid div {
+      text-align: center; }
+  .proxEvento {
+    grid-area: proxEvento; }
+    .proxEvento img {
+      height: 660px; }
+  .e1 {
+    grid-area: evento1; }
+  .e2 {
+    grid-area: evento2; }
+  .e3 {
+    grid-area: evento3; }
+  .e4 {
+    grid-area: evento4; } }
