@@ -15,102 +15,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- keywords y description -->
     <meta name="Keywords" content="tips para cortes, consejos peluqueria, noticias peluqueria, tratamientos peluqueria, productos barberia, consejos estetica, trucos barba">
-    <meta name="description" content="Trucos, consejos y curiosidades realcionas con barberia, peluqueria y estetica">
+    <meta name="description" content="Trucos, consejos y curiosidades relacionadas con barberia, peluqueria y estetica">
     <title>Tu blog de peluqueria, barberia y estetica</title>
     </head>
-<body class="container">
-    <!-- encabezado -->
-    <header class="row"> 
-        <div class="row">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
-                <div class="container-fluid">
-                    <a href="../index.html"><img src="../Multimedia/Logo.png" alt="StylEd Logo" height="48px" class="navbar-brand stylogo"></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bienvenido</h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                        </li>
-                        <li class="nav-item d-flex">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Educación</a>
-                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                            <li><a class="dropdown-item" href="Educacion.html">Tutoriales</a></li>
-                            <li><a class="dropdown-item" href="Educacion.html">Especializaciones</a></li>
-                        </ul>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Eventos.html">Eventos</a>
-                            </li>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                </div>
+<body class="container fondo">
+<!-- encabezado -->
+<header>
+    <div class="menu">
+        <input type="checkbox" id="checkMenu">
+        <div class="menuHeader">
+            <div class="menuLogo">
+                <a href="../index.html"><img src="../Multimedia/Logo.png" class="stylogo focus" alt=""></a>
+            </div>
+        </div>
+        <div class="botonMenu">
+            <label for="checkMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+        </div>
+        <div class="menuLinks">
+            <a href="../index.html" class="focus">Home</a>
+            <a href="#" class="focus">Blog</a>
+            <a href="Eventos.html" class="focus">Eventos</a>
+            <div class="subnav">
+                <button class="subnavbtn focus">Educación</button>
+                <div class="subnav-content">
+                <a href="Tutoriales.html" class="focus">Tutoriales</a>
+                <a href="Especializaciones.html" class="focus">Especializaciones</a>
                 </div>
             </div>
-            </nav>
         </div>
-    </header>
+    </div>
+</header>
     <!-- cuerpo -->
-    <br>
     <div class="headType">Artículos</div>
-    <section class="row">
-                <div class="row row-cols-1 row-cols-md-2 g-4">
+    <section class="row justify-content-center">
+                <div class="row row-cols-1 row-cols-md-2">
                 <div class="col">
-                    <div class="card">
+                    <div class="card mb-2">
                     <img src="../Multimedia/barba.jpg" class="card-img-top" alt="cuidados barba">
-                    <div class="card-body">
-                        <h5 class="card-title">¿Cómo cuidar tu barba?</h5>
-                        <p class="card-text">En este post, te damos consejos y tips útiles para el cuidado de tu barba.</p>
-                        <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    <div class="card-body bg-light">
+                        <h5 class="card-title primario">¿Cómo cuidar tu barba?</h5>
+                        <p class="card-text secundario">En este post, te damos consejos y tips útiles para el cuidado de tu barba.</p>
+                        <a href="../subpages/articulo1.html" class="btn btn-danger">Ver Artículo</a>
                     </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card mb-2">
                     <img src="../Multimedia/tips color.jpg" class="card-img-top" alt="tips color">
-                    <div class="card-body">
-                        <h5 class="card-title">Tips para mantener tu color brillante</h5>
-                        <p class="card-text">Estos secretos de peluquería van a hacer que tu color se vea reluciente por mucho más tiempo.</p>
-                        <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    <div class="card-body bg-light">
+                        <h5 class="card-title primario">Tips para mantener tu color brillante</h5>
+                        <p class="card-text secundario">Estos tips van a hacer que tu color se vea reluciente por más tiempo.</p>
+                        <a href="../subpages/articulo2.html" class="btn btn-danger">Ver Artículo</a>
                     </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card mb-2">
                     <img src="../Multimedia/corto mujer.jpg" class="card-img-top" alt="corte mujer">
-                    <div class="card-body">
-                        <h5 class="card-title">Cortes de cabello corto para mujeres</h5>
-                        <p class="card-text">Te mostramos algunos estilos cortos de tendencia para que lleves un look cómodo y versátil.</p>
-                        <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    <div class="card-body bg-light">
+                        <h5 class="card-title primario">Cortes de cabello corto para mujeres</h5>
+                        <p class="card-text secundario">Te mostramos algunos estilos cortos de tendencia para que lleves un look cómodo y versátil.</p>
+                        <a href="#" class="btn btn-danger">Ver Artículo</a>
                     </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card">
+                    <div class="card mb-2">
                     <img src="../Multimedia/tijeras.jpg" class="card-img-top" alt="tijeras">
-                    <div class="card-body">
-                        <h5 class="card-title">¿Cómo elegir tu tijera?</h5>
-                        <p class="card-text">Aprende qué tener en cuenta a la hora de elegir tu tijera para el día a día en el salón</p>
-                        <a href="#" class="btn btn-primary">Ver Artículo</a>
+                    <div class="card-body bg-light">
+                        <h5 class="card-title primario">¿Cómo elegir tu tijera?</h5>
+                        <p class="card-text secundario">Aprende qué tener en cuenta a la hora de elegir tu tijera para el día a día en el salón</p>
+                        <a href="#" class="btn btn-danger">Ver Artículo</a>
                     </div>
                     </div>
                 </div>
             </div>
     </section>
     <!-- pie de pagina -->
-    <footer  class="row">
+    <footer>
         <div>
             <ul class="nav justify-content-end">
                 <li class="nav-item">
